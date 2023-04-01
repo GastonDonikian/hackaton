@@ -1,4 +1,4 @@
-"Cancer type (Adenocarcinoma=0, Carcinosarcoma=1)",Patient ID,"Race (White=0, Black=1, Other=2, Unkn=3)",Age,"Sex (M=0, F=1)","Marital status at diagnosis (married=0, separated=1, divorced=2, single=3, unmarried=4, widowed=5, unkn=6)",RX Summ--Surg Prim Site (1998+)(Surgical method),Radiation recode,"Chemotherapy recode (yes, no/unk)",CS tumor size (2004-2015),Year of diagnosis,"Grade (thru 2017) (undef=0, poorly=1, moderately=2, well=3, unkn=4)",Combined Summary Stage (2004+),"Derived AJCC Stage Group, 6th ed (2004-2015)","Derived AJCC T, 6th ed (2004-2015)","Derived AJCC M, 6th ed (2004-2015)",SEER other cause of death classification,Survival months,Vital status recode (study cutoff used),Sequence number
+"cancerType","PatientId","ethnicity","age","sex","maritalStatus",RX Summ--Surg Prim Site (1998+)(Surgical method),Radiation recode,"Chemotherapy recode (yes, no/unk)","tumorSize",Year of diagnosis,"grade",Combined Summary Stage (2004+),"Derived AJCC Stage Group, 6th ed (2004-2015)","Derived AJCC T, 6th ed (2004-2015)","Derived AJCC M, 6th ed (2004-2015)",SEER other cause of death classification,Survival months,Vital status recode (study cutoff used),Sequence number
 0,29092,2,91,1,5,0,None/Unknown,Yes,22,2014,4,Distant,IV,T3,M1,1,2,Dead,2nd of 2 or more primaries
 0,384580,0,72,1,5,0,None/Unknown,No/Unknown,999,2005,4,Unknown/unstaged,UNK Stage,TX,MX,1,1,Dead,3rd of 3 or more primaries
 0,441847,1,93,1,5,40,None/Unknown,No/Unknown,999,2014,2,,,,,,,,
@@ -7689,7 +7689,3 @@
 0,62789410,1,78,0,2,40,None/Unknown,No/Unknown,28,2014,1,,,,,,,,
 0,62818246,0,73,0,2,40,None/Unknown,Yes,65,2014,2,,,,,,,,
 0,62840590,0,84,0,2,0,None/Unknown,Yes,999,2015,4,Distant,IV,T3,M1,1,1,Dead,One primary only
-,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,

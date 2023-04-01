@@ -3,6 +3,14 @@ input data:
     Cancer Type
             0 -> Adenocarcinoma
             1 -> Carcinosarcoma
+    Cancer Grade
+            0 -> under differentiated
+            1 -> poorly differentiated
+            2 -> moderately differentiated
+            3 -> well differentiated
+            4 -> unknown
+    Tumr Size
+            int from 0 to 999 (mm squared)
     Patient Ethnicity
             0 -> Caucasian
             1 -> African American
@@ -21,9 +29,3 @@ input data:
             4 -> Unmarried
             5 -> Widowed
             6 -> Unknown
-    Cancer Grade
-            0 -> under differentiated
-            1 -> poorly differentiated
-            2 -> moderately differentiated
-            3 -> well differentiated
-            4 -> unknown
