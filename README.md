@@ -29,3 +29,4 @@ input data:
             4 -> Unmarried
             5 -> Widowed
             6 -> Unknown
+   Las variables categoricas las transformamos en variables dummy
