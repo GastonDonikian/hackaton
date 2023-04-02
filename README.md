@@ -28,7 +28,7 @@ input data:
     Tumor size
         0,01 - 20 cm2 
 
-    Grade 
+    Stage 
         0 - 4
 
     Surgical Method 
