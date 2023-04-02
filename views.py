@@ -54,13 +54,3 @@ def getValue():
     input_point['ethnicity'] = ethnicities[input_point['ethnicity']]
     #ponele que answer es json con cada caso + porcentaje de similaridad
     return render_template('answer.html',data=numpy_to_json(answer), columnNames = column_names, patient=input_point)
-
-
-@views.route("/json")
-def get_json():
-    return jsonify({"name": "Tim", "coolness": 10})
-
-@views.route("/data")
-def get_data():
-    data = request.json
-    return jsonify(data)

@@ -14,8 +14,11 @@ def get_nearest_points(input_point):
         # Read data from CSV file
     df = pd.read_csv('dataFilterByUs.csv')
     df = df[df['cancerType'] == input_point['cancerType']]
-    all_data = pd.read_csv('dataFilterByUs.csv').values
-    
+    all_data = pd.read_csv('dataFilterByUs.csv')
+    all_data = all_data[all_data['cancerType'] == input_point['cancerType']]
+
+    all_data =all_data.values
+
     input_point = [input_point['age'],input_point['mentalHealth'],input_point['generalHealth'],input_point['tumorSize'],input_point['cancerStage'],1 if input_point['sex'] == 0 else 0, 1 if input_point['sex'] == 1 else 0,
                              1 if input_point['ethnicity'] == 0 else 0,1 if input_point['ethnicity'] == 1 else 0,1 if input_point['ethnicity'] == 2 else 0,1 if input_point['ethnicity'] == 3 else 0]
 
@@ -23,7 +26,7 @@ def get_nearest_points(input_point):
     print(df)
     df = df.iloc[:, 2:]
 
-    # Remove the last four columns
+    # Remove the last five columns
     df = df.iloc[:, :-5]
     # Separate columns into arrays
 
@@ -50,10 +53,5 @@ def get_nearest_points(input_point):
     max_distance = np.max(nearest_distances)
     similarities = np.round((max_distance - nearest_distances) / max_distance * 100, 2)
     nearest_points = np.concatenate((nearest_points, np.array(similarities)[:, np.newaxis]), axis=1)
+    print(column_names)
     return nearest_points
-
-# # Example usage of the function
-# input_point = {'age':70, 'sex':0,'ethnicity':1,'mentalHealth':4,'generalHealth':10,'tumorSize':10,'cancerType':0,'cancerStage':1}
-# nearest_points = get_nearest_points(input_point)
-
-# print(f"The 10 nearest points to {input_point} are:\n{nearest_points}\n")
