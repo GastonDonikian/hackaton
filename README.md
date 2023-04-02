@@ -1,8 +1,8 @@
 Proyect for recieving similar cancer cases to assess different treatment methods
-input data:
-    Cancer Type
-            0 -> Adenocarcinoma
-            1 -> Carcinosarcoma
+input data:  
+    Cancer Type    
+            0 -> Adenocarcinoma   
+            1 -> Carcinosarcoma   
     Cancer Grade
             0 -> under differentiated
             1 -> poorly differentiated
