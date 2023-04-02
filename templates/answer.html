@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Patient</h1>
+    <table>
+        <tr>
+          <th>Age</th>
+          <th>Sex</th>
+          <th>Ethnicity</th>
+          <th>Mental Health</th>
+          <th>General Health</th>
+          <th>Tumor Size</th>
+          <th>Cancer Type</th>
+          <th>Cancer Stage</th>
+        </tr>
+        <tr>
+          <td>{{patient['age']}}</td>
+          <td>{{patient['sex']}}</td>
+          <td>{{patient['ethnicity']}}</td>
+          <td>{{patient['mentalHealth']}}</td>
+          <td>{{patient['generalHealth']}}</td>
+          <td>{{patient['tumorSize']}}</td>
+          <td>{{patient['cancerType']}}</td>
+          <td>{{patient['cancerStage']}}</td>
+        </tr>
+      </table>
+    <h1>Similar Cases Table</h1>
+        <table>
+            <thead>
+            <tr>
+                <th>Cancer Type</th>
+                <th>Age</th>
+                <th>Sex</th>
+                <th>Ethnicity</th>
+                <th>Mental Health</th>
+                <th>General Health</th>
+                <th>Tumor Size</th>
+                <th>Cancer Stage</th>
+                <th>Effectiveness Of Treatment</th>
+                <th>Description</th>
+                <th>Similarity %</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>{{data[0]['age']}}</td>
+                <td>{{data[0]['sex']}}</td>
+                <td>{{data[0]['ethnicity']}}</td>
+                <td>{{data[0]['mentalHealth']}}</td>
+                <td>{{data[0]['generalHealth']}}</td>
+                <td>{{data[0]['tumorSize']}}</td>
+                <td>{{data[0]['cancerType']}}</td>
+                <td>{{data[0]['cancerStage']}}</td>
+                <td>{{data[0]['effectivenessOfTreatment']}}</td>
+                <td>{{data[0]['descripcion']}}</td>
+                <td>{{data[0]['similarity']}}</td>
+            </tr>
+            <tr>
+                <td>{{data[1]['age']}}</td>
+                <td>{{data[1]['sex']}}</td>
+                <td>{{data[1]['ethnicity']}}</td>
+                <td>{{data[1]['mentalHealth']}}</td>
+                <td>{{data[1]['generalHealth']}}</td>
+                <td>{{data[1]['tumorSize']}}</td>
+                <td>{{data[1]['cancerType']}}</td>
+                <td>{{data[1]['cancerStage']}}</td>
+                <td>{{data[1]['effectivenessOfTreatment']}}</td>
+                <td>{{data[1]['descripcion']}}</td>
+                <td>{{data[1]['similarity']}}</td>
+            </tr>
+            <tr>
+                <td>{{data[2]['age']}}</td>
+                <td>{{data[2]['sex']}}</td>
+                <td>{{data[2]['ethnicity']}}</td>
+                <td>{{data[2]['mentalHealth']}}</td>
+                <td>{{data[2]['generalHealth']}}</td>
+                <td>{{data[2]['tumorSize']}}</td>
+                <td>{{data[2]['cancerType']}}</td>
+                <td>{{data[2]['cancerStage']}}</td>
+                <td>{{data[2]['effectivenessOfTreatment']}}</td>
+                <td>{{data[2]['descripcion']}}</td>
+                <td>{{data[2]['similarity']}}</td>
+            </tr>
+            <tr>
+                <td>{{data[3]['age']}}</td>
+                <td>{{data[3]['sex']}}</td>
+                <td>{{data[3]['ethnicity']}}</td>
+                <td>{{data[3]['mentalHealth']}}</td>
+                <td>{{data[3]['generalHealth']}}</td>
+                <td>{{data[3]['tumorSize']}}</td>
+                <td>{{data[3]['cancerType']}}</td>
+                <td>{{data[3]['cancerStage']}}</td>
+                <td>{{data[3]['effectivenessOfTreatment']}}</td>
+                <td>{{data[3]['descripcion']}}</td>
+                <td>{{data[3]['similarity']}}</td>
+            </tr>
+            <tr>
+                <td>{{data[4]['age']}}</td>
+                <td>{{data[4]['sex']}}</td>
+                <td>{{data[4]['ethnicity']}}</td>
+                <td>{{data[4]['mentalHealth']}}</td>
+                <td>{{data[4]['generalHealth']}}</td>
+                <td>{{data[4]['tumorSize']}}</td>
+                <td>{{data[4]['cancerType']}}</td>
+                <td>{{data[4]['cancerStage']}}</td>
+                <td>{{data[4]['effectivenessOfTreatment']}}</td>
+                <td>{{data[4]['descripcion']}}</td>
+                <td>{{data[4]['similarity']}}</td>
+            </tr>
+            <tr>
+                <td>{{data[5]['age']}}</td>
+                <td>{{data[5]['sex']}}</td>
+                <td>{{data[5]['ethnicity']}}</td>
+                <td>{{data[5]['mentalHealth']}}</td>
+                <td>{{data[5]['generalHealth']}}</td>
+                <td>{{data[5]['tumorSize']}}</td>
+                <td>{{data[5]['cancerType']}}</td>
+                <td>{{data[5]['cancerStage']}}</td>
+                <td>{{data[5]['effectivenessOfTreatment']}}</td>
+                <td>{{data[5]['descripcion']}}</td>
+                <td>{{data[5]['similarity']}}</td>
+            </tr>
+            <tr>
+                <td>{{data[6]['age']}}</td>
+                <td>{{data[6]['sex']}}</td>
+                <td>{{data[6]['ethnicity']}}</td>
+                <td>{{data[6]['mentalHealth']}}</td>
+                <td>{{data[6]['generalHealth']}}</td>
+                <td>{{data[6]['tumorSize']}}</td>
+                <td>{{data[6]['cancerType']}}</td>
+                <td>{{data[6]['cancerStage']}}</td>
+                <td>{{data[6]['effectivenessOfTreatment']}}</td>
+                <td>{{data[6]['descripcion']}}</td>
+                <td>{{data[6]['similarity']}}</td>
+            </tr>
+            <tr>
+                <td>{{data[7]['age']}}</td>
+                <td>{{data[7]['sex']}}</td>
+                <td>{{data[7]['ethnicity']}}</td>
+                <td>{{data[7]['mentalHealth']}}</td>
+                <td>{{data[7]['generalHealth']}}</td>
+                <td>{{data[7]['tumorSize']}}</td>
+                <td>{{data[7]['cancerType']}}</td>
+                <td>{{data[7]['cancerStage']}}</td>
+                <td>{{data[7]['effectivenessOfTreatment']}}</td>
+                <td>{{data[7]['descripcion']}}</td>
+                <td>{{data[7]['similarity']}}</td>
+            </tr>
+            <tr>
+                <td>{{data[8]['age']}}</td>
+                <td>{{data[8]['sex']}}</td>
+                <td>{{data[8]['ethnicity']}}</td>
+                <td>{{data[8]['mentalHealth']}}</td>
+                <td>{{data[8]['generalHealth']}}</td>
+                <td>{{data[8]['tumorSize']}}</td>
+                <td>{{data[8]['cancerType']}}</td>
+                <td>{{data[8]['cancerStage']}}</td>
+                <td>{{data[8]['effectivenessOfTreatment']}}</td>
+                <td>{{data[8]['descripcion']}}</td>
+                <td>{{data[8]['similarity']}}</td>
+            </tr>
+            <tr>
+                <td>{{data[9]['age']}}</td>
+                <td>{{data[9]['sex']}}</td>
+                <td>{{data[9]['ethnicity']}}</td>
+                <td>{{data[9]['mentalHealth']}}</td>
+                <td>{{data[9]['generalHealth']}}</td>
+                <td>{{data[9]['tumorSize']}}</td>
+                <td>{{data[9]['cancerType']}}</td>
+                <td>{{data[9]['cancerStage']}}</td>
+                <td>{{data[9]['effectivenessOfTreatment']}}</td>
+                <td>{{data[9]['descripcion']}}</td>
+                <td>{{data[9]['similarity']}}</td>
+            </tr>
+            </tbody>
+        </table>
+</body>
+</html>
+
+<style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      text-align: center;
+      padding: 8px;
+      border: 1px solid #ddd;
+    }
+    th {
+      background-color: #f2f2f2;
+      font-weight: bold;
+    }
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+    tr:hover {
+      background-color: #ddd;
+    }
+    h1 {
+  text-align: center; /* Centers the text within the element */
+  margin-left: auto; /* Sets the left margin to auto */
+  margin-right: auto; /* Sets the right margin to auto */
+}
+  </style>

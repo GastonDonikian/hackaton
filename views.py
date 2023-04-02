@@ -9,7 +9,7 @@ import json
 column_names = ["cancerType","patientID","age","sex","ethnicity",
                     "mentalHealth","generalHealth","tumorSize","cancerStage",
                     "surgicalMethod","radiationMethod","chemotherapy",
-                    "effectivenessOfTreatment","descripcion"]
+                    "effectivenessOfTreatment","descripcion","similarity"]
 
 def numpy_to_json(arr):
     
@@ -40,7 +40,7 @@ def getValue():
     #input_point = {'age':70, 'sex':0,'ethnicity':1,'mentalHealth':4,'generalHealth':10,'tumorSize':10,'cancerType':0,'cancerStage':1}
     answer = get_nearest_points(input_point)
     #ponele que answer es json con cada caso + porcentaje de similaridad
-    return render_template('answer.html',data=numpy_to_json(answer), columnNames = column_names)
+    return render_template('answer.html',data=numpy_to_json(answer), columnNames = column_names, patient=input_point)
 
 
 @views.route("/json")

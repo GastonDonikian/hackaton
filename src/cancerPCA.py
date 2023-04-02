@@ -48,7 +48,7 @@ def get_nearest_points(input_point):
     nearest_points = all_data[nearest_indices]
     nearest_distances = distances[0][nearest_indices]
     max_distance = np.max(nearest_distances)
-    similarities = (max_distance - nearest_distances) / max_distance * 100
+    similarities = np.round((max_distance - nearest_distances) / max_distance * 100, 2)
     nearest_points = np.concatenate((nearest_points, np.array(similarities)[:, np.newaxis]), axis=1)
     return nearest_points
 
