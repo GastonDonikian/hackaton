@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../styles/index.css">
+</head>
+<body>
+    <form name="passData" action="." method="post">
+        <div>
+            <label for="age">Patient age: </label>
+            <input type="number" name="age" id="age" min= "0" max = "150" placeholder="57">
+        </div>
+        <div>
+            <label for="sex">Patient sex: </label>
+            <select name="sex" id="sex" type="number">
+                <option value="0">Male</option>
+                <option value="1">Female</option>
+            </select>
+        </div>
+        <div>
+            <label for="ethnicity">Patient ethnicity: </label>
+            <select name="ethnicity" id="ethnicity" type="number">
+                <option value="0">Caucasian</option>
+                <option value="1">African American</option>
+                <option value="2">Other</option>
+            </select>
+        </div>
+        <div>
+            <label for="mentalHealth">Patient mental health: </label>
+            <select name="mentalHealth" id="mentalHealth" type="number">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select>
+        </div>
+        <div>
+            <label for="Patient general health">Patient General Health: </label>
+            <input type="number" name="generalHealth" id="generalHealth" min= "0" max = "100" placeholder="0-100">
+        </div>
+        <div>
+            <label for="cancerType">Cancer type: </label>
+            <select name="cancerType" id="cancerType" type="number">
+                <option value="0">Adenocarcinoma</option>
+                <option value="1">Carcinosarcoma</option>
+            </select>
+        </div>
+        <div>
+            <label for="cancerStage">Cancer stage: </label>
+            <select name="cancerStage" id="cancerStage" type="number">
+                <option value="0">1</option>
+                <option value="1">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <div>
+            <label for="tumorSize">Tumor size(cm squared): </label>
+            <input type="number" name="tumorSize" id="tumorSize" min= "0.01" max = "20" step="0.01" placeholder="0.01-20">
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+
+    <h1>{{age}}</h1>
+    <h1>{{gender}}</h1>
+    <h1>{{cancerType}}</h1>
+    <script type="text/javascript" src="{{ url_for('static', filename='index.js')}}">
+
+    </script>
+</body>
+</html>
+<style>
+    form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+  }
+  
+  div {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: inline-block;
+    width: 200px;
+    font-weight: bold;
+  }
+  
+  input[type="number"],
+  select {
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+  }
+  
+  input[type="number"]:focus,
+  select:focus {
+    outline: none;
+    border-color: #3a87ad;
+    box-shadow: 0 0 5px #3a87ad;
+  }
+  
+  input[type="submit"] {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #3a87ad;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #266b8e;
+  }
+  
+  @media screen and (max-width: 600px) {
+    label {
+      display: block;
+      width: 100%;
+    }
+  }
+</style>
