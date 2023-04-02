@@ -29,16 +29,16 @@ df.dropna()
 df = scaler.fit_transform(df)
 resultArray = []
 
-
+weights = get_trait_weights()
 #loop to get the data of the 7690 rows
 for ind in range(data.shape[0]):
     toAppend = 0
     if (data['cancerType'][ind] == cancerType):
-        toAppend += 1 / (math.pow(df[ind][0] - grade, 2)+1)
-        toAppend += 1 / (math.pow(df[ind][1] - tumorSize, 2)+1)
+        toAppend += (1 / (math.pow(df[ind][0] - grade, 2)+1))
+        toAppend += (1 / (math.pow(df[ind][1] - tumorSize, 2)+1))
         if(data['ethnicity'][ind] == ethnicity):
             toAppend += 1
-        toAppend += 1 / (math.pow(df[ind][2] - age, 2)+1)
+        toAppend += (1 / (math.pow(df[ind][2] - age, 2)+1))*weights['']
         if(data['sex'][ind] == sex):
             toAppend += 1
         if(data["maritalStatus"][ind] == maritalStatus):
@@ -50,7 +50,6 @@ resultArray = sorted(range(len(resultArray)), key=lambda i: resultArray[i])[-10:
 
 
 
-print()
 print(df)
 grades = data['grade'].values
 tumor_sizes = data['tumorSize'].values
