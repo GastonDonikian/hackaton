@@ -1,4 +1,4 @@
-"cancerType","patientID","age","sex","ethnicity","mentalHealth","generalHealth","tumorSize","grade","surgicalMethod","radiationMethod","chemotherapy","effectivenessOfTreatment"
+"cancerType","patientID","age","sex","ethnicity","mentalHealth","generalHealth","tumorSize","stage","surgicalMethod","radiationMethod","chemotherapy","effectivenessOfTreatment"
 0,29092,91,1,2,5,58,0.22,4,0,0,1,2
 0,5425722,86,1,0,5,75,4,0,0,0,0,12
 0,11117750,82,1,0,5,23,4,0,3,0,0,72
