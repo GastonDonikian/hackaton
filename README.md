@@ -53,6 +53,6 @@ input data:
         0 - 100
 
     Description of therapy
-
+        Surgical method, Radiation and Chemotherapy summary 
 
    Las variables categoricas las transformamos en variables dummy
