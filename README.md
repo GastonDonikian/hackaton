@@ -1,3 +1,7 @@
+To build the project, just run ./build.sh giving the necessary permissions.
+This file will install requirements and build the webapp at: http://127.0.0.1:8000
+
+
 Proyect for recieving similar cancer cases to assess different treatment methods
 input data:  
 
